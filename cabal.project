@@ -1,3 +1,5 @@
+with-compiler: ghc-8.10.7
+
 packages:
   kore
 
@@ -22,9 +24,6 @@ source-repository-package
   location: https://github.com/ttuegel/pipes-ghc-events.git
   tag: 4ab25e717658fa833aaf5efd76db38ccb1178f96
   subdir: eventlog2speedscope
+          pipes-ghc-events
 
-source-repository-package
-  type: git
-  location: https://github.com/ttuegel/pipes-ghc-events.git
-  tag: 4ab25e717658fa833aaf5efd76db38ccb1178f96
-  subdir: pipes-ghc-events
+allow-newer: *
