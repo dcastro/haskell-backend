@@ -129,7 +129,7 @@ data Equation variable = Equation
     , right :: !(TermLike variable)
     , ensures :: !(Predicate variable)
     , attributes :: !(Attribute.Axiom Symbol variable)
-    , equationHash :: !Int
+    , equationHash :: Int
     }
     deriving stock (Eq, Ord, Show)
     deriving stock (GHC.Generic)
